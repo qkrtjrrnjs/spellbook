@@ -54,6 +54,7 @@ form.onsubmit = function(event){
             spellBook[counter] = spellValue;
             manaBook[counter] = manaValue;
             counter++;
+            spellBook.sort();
             form.reset();
         }
     }
