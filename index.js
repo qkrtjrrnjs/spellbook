@@ -42,10 +42,20 @@ form.onsubmit = function(event){
         alert("ENTER A NUMBER FOR THE MANA VALUE");
     }
     else{
-        spellBook[counter] = spellValue;
-        manaBook[counter] = manaValue;
-        counter++;
-        form.reset();
+        const exists = false;
+        for(let i = 0; i < spellBook.length; i++){
+            if(spellBook[i] === spellValue){
+                alert("SPELL ALREADY EXISTS IN THE SPELLBOOK!");
+                form.reset();   
+                exists = true;             
+            }
+        }
+        if(!exists){
+            spellBook[counter] = spellValue;
+            manaBook[counter] = manaValue;
+            counter++;
+            form.reset();
+        }
     }
 }
 
