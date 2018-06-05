@@ -8,20 +8,26 @@
     <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
 </head>
 <body>
-    <h1>[SpellBook]</h1>
-    <h1 id="spells">________</h1><br/>
-    <h1>[Xtern Bootcamp 2018]</h2>
-    <h1 id="spelling">________</h2><br/>  
-    <button>change text</button><br/><br/><br/>
+    <div id="spellBookDiv">
+        <h1>[SPELLBOOK]</h1>
+    </div>
+    <h1 id="spellHeading">[SPELL]</h1>
+    <h1 id="SPELL"></h1>
+    <h1 id="manaHeading">[MANA]</h2>
+    <h1 id="MANA"></h2>
+    <button>FIND</button><br/><br/><br/>
 
     <form id="formID">
-        Username: <input type="text" name="usernameData" id= "u" placeholder="username"/>
-        Password: <input type="password" name="passwordData" id="p" placeholder="password"/>
-        <input type="submit" id="submitButton" value="login"/>
+        spell: <input type="text" name="usernameData" id= "u" placeholder="spell" autofocus/>
+        mana: <input type="text" name="passwordData" id="p" placeholder="mana"/>
+        <input type="submit" id="submitButton" value="ADD"/>
     </form>
-    <p id="user"></p>
-    <p id="pass"></p>
+
+    <div id="harryPotterDiv">
+            <img class="gif" src="./harryPotter.gif">
+    </div>
 
     <script src="index.js"></script>  
 </body>
+
 </html>

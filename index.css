@@ -1,8 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Francois+One');
+@import url('https://fonts.googleapis.com/css?family=Unica+One');
+
 body{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Unica One', cursive;
     text-align: center;
-    background-color: black;
-    color: white;
+    background-color: #daeef4;
+    color: #112b36;
+}
+
+#harryPotterDiv{
+    position: absolute;    
+    right: 90vw;
+    top: 33vw;
+    z-index: -1;
+    animation: slide 10s linear infinite;
+}
+
+img.gif{
+    width: 300px;
+    height: auto;
+}
+
+@keyframes slide{
+    0%{
+      transform: translate3d(0, 0, 0);
+    }
+    100%{
+      transform: translate3d(120vw, 0, 0);
+    }
+}
+
+#spellHeading{
+    font-family: 'Francois One', sans-serif;
+    font-size: 25px;
+
+}
+
+#manaHeading{
+    font-family: 'Francois One', sans-serif;
+    font-size: 25px;
+}
+
+#spellBookDiv{
+    background-color: #eec239;
+    font-family: 'Francois One', sans-serif;
+    font-size: 30px;
 }
 
 button{
@@ -10,7 +52,7 @@ button{
 }
 
 input{
-    font-size: 15px;
+    font-size: 20px;
 }
 
 p{
