@@ -20,6 +20,7 @@ const changeText = function(){
 
 button.addEventListener('click', changeText);
 
+
 const form = document.getElementById('formID');
 form.onsubmit = function(event){
     event.preventDefault();    
@@ -28,10 +29,10 @@ form.onsubmit = function(event){
     const username = document.getElementById('user');
     const password = document.getElementById('pass');
 
-    if(passwordValue != '' && username != ''){
+    if(passwordValue != '' && usernameValue != ''){
         username.innerHTML = 'username: ' + usernameValue;
         password.innerHTML = 'password: ' + passwordValue;
-        form.remove();
+        form.reset();
     }
     
     if(usernameValue === '' && passwordValue === ''){
