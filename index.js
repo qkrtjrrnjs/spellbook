@@ -25,8 +25,9 @@ let counter = 0;
 const spellList = function(spell){
     var node = document.createElement('li');            
     var textnode = document.createTextNode(spell);       
-    node.appendChild(textnode);                              
+    node.appendChild(textnode);                             
     document.getElementById('spellList').appendChild(node); 
+    node.style.color = '#ec6249';
 }
 
 const manaList = function(mana){
@@ -34,11 +35,11 @@ const manaList = function(mana){
     var textnode2 = document.createTextNode(mana);       
     node2.appendChild(textnode2);                              
     document.getElementById('manaList').appendChild(node2); 
+    node2.style.color = '#ec6249';
 }
 
 //input "submit" type click handling
 const form = document.getElementById('formID');
-//form.usernameData.focus();
 form.onsubmit = function(event){
     event.preventDefault();   
     //const f = event.target; 
