@@ -1,14 +1,16 @@
-const button = document.querySelector('button');
+//const button = document.querySelector('button');
 let spellBook = [];
 let manaBook = [];
 let counter = 0;
-let spellTracker = 0;
+//let spellTracker = 0;
 
-//function that changes the heading texts 
-const changeText = function(){
+//function that changes the heading texts (for button)
+/*const changeText = function(){
+    //displaying spellbook w/ heading (one by one)
+    
     const heading1 = document.querySelector('#SPELL');
     const heading2 = document.querySelector('#MANA');
-
+    
     if(spellTracker < spellBook.length){
         heading1.textContent = spellBook[spellTracker];
         heading2.textContent = manaBook[spellTracker++];
@@ -18,6 +20,20 @@ const changeText = function(){
         heading1.textContent = spellBook[spellTracker];
         heading2.textContent = manaBook[spellTracker++];
     }
+}*/
+
+const spellList = function(spell){
+    var node = document.createElement('li');            
+    var textnode = document.createTextNode(spell);       
+    node.appendChild(textnode);                              
+    document.getElementById('spellList').appendChild(node); 
+}
+
+const manaList = function(mana){
+    var node2 = document.createElement('li');            
+    var textnode2 = document.createTextNode(mana);       
+    node2.appendChild(textnode2);                              
+    document.getElementById('manaList').appendChild(node2); 
 }
 
 //input "submit" type click handling
@@ -51,15 +67,19 @@ form.onsubmit = function(event){
             }
         }
         if(!exists){
+            spellList(spellValue);
+            manaList(manaValue);
+
             spellBook[counter] = spellValue;
             manaBook[counter] = manaValue;
             counter++;
-            form.reset();
             spellBook.sort();
+            form.reset();
+            form.usernameData.focus();
         }
     }
 }
 
-button.addEventListener('click', changeText);
+//button.addEventListener('click', changeText);
 
 
