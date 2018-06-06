@@ -12,25 +12,19 @@
         <h1>[SPELLBOOK]</h1>
     </div>
 
-    <h1 id="spellHeading">[SPELL]</h1>
-    <ol id="spellList"></ol>    
-    <!--<h1 id="SPELL"></h1>-->
+    <h1 id="spellHeading" class="heading">[SPELL]</h1>
+    <ol id="spellList" class="list"></ol>    
 
-    <h1 id="manaHeading">[MANA NEEDED]</h2>
-    <ol id="manaList"></ol><br>     
-    <!--<h1 id="MANA"></h2>-->
+    <h1 id="manaHeading" class="heading">[MANA NEEDED]</h2>
+    <ol id="manaList" class="list"></ol><br>     
         
     <form id="formID">
-        spell: <input type="text" name="usernameData" id= "u" placeholder="spell" autofocus/>
-        mana: <input type="text" name="passwordData" id="p" placeholder="mana needed"/>
+        spell: <input type="text" name="spellData" id= "u" placeholder="spell" autofocus/>
+        mana: <input type="number" name="manaData" id="p" placeholder="mana needed"/>
         <input type="submit" id="submitButton" value="ADD"/>
     </form>
 
-    <!--<br/><br/><button id="spellBtn"></button>-->
-
-    <div id="harryPotterDiv">
-            <img class="gif" src="./harryPotter.gif">
-    </div>
+    <img class="gif" src="./harryPotter.gif">
 
     <script src="index.js"></script>  
 </body>
