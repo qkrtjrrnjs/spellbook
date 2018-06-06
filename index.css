@@ -5,18 +5,15 @@ body{
     font-family: 'Unica One', cursive;
     background-color: #daeef4;
     color: #112b36;
-    text-align: center;
+    cursor: url("Embossed.cur"), auto;	
 }
 
-#harryPotterDiv{
+img.gif{
     position: absolute;    
     right: 90vw;
     top: 33vw;
     z-index: -1;
     animation: slide 10s linear infinite;
-}
-
-img.gif{
     width: 300px;
     height: auto;
 }
@@ -36,46 +33,32 @@ img.gif{
     font-size: 30px;
     text-shadow: 3px 3px 2px #ec6249;
     text-align: center;
+    
 }
 
-#spellHeading{
+.heading{
     font-family: 'Francois One', sans-serif;
     font-size: 25px;
     text-align: center;
 }
 
-#manaHeading{
-    font-family: 'Francois One', sans-serif;
-    font-size: 25px;
-    text-align: center;
-}
-
-#spellList{
+.list{
     font-size: 20px;
     list-style-position: inside;
-    width: 93vw;
     height: 60px;
     overflow-y: scroll;
-    text-align: center;
-
-}
-
-#manaList{
-    font-size: 20px;
-    list-style-position: inside;
-    width: 93vw;
-    height: 60px;
-    overflow-y: scroll;
+    width: 500px;
+    margin: 2vh 29vw;
     text-align: center;
 }
-/*
-#spellBtn{
-    width: 50px;
-    height: 50px;
-    border-radius: 30px;
-    text-align: center;
-}*/
 
 input{
     font-size: 20px;
+    text-align: center;
+    font-family: 'Francois One', sans-serif;
+    cursor: url("Embossed.cur"), auto;	
+}
+
+#formID{
+    text-align: center;
 }
