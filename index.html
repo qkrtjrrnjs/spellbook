@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Spellbook</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
 </head>
@@ -12,11 +12,14 @@
         <h1 onclick="makeVisible()">[SPELLBOOK]</h1>
     </div>
 
-    <h1 id="spellHeading" class="heading">[SPELL]</h1>
-    <ol id="spellList" class="list"></ol>    
-
-    <h1 id="manaHeading" class="heading">[MANA NEEDED]</h2>
-    <ol id="manaList" class="list"></ol><br>     
+    <h1 id="spellHeading" class="heading">[SPELLS]</h1>
+    <ol id="spellList" class="list">
+        <li class="spell template">
+            <span class="name"></span>
+            <span class="manaNeeded"></span>
+            <button class="delete"></button>
+        </li>
+    </ol><br><br>    
         
     <form id="formID">
         spell: <input type="text" name="spellData" id= "u" placeholder="spell" autofocus/>
@@ -24,7 +27,7 @@
         <input type="submit" id="submitButton" value=""/>
     </form>
 
-    <img class="gif" src="./harryPotter.gif">
+    <img class="hp" src="./harryPotter.gif">
 
     <script src="index.js"></script>  
 </body>

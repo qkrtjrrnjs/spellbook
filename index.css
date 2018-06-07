@@ -7,22 +7,22 @@ body{
     color: #112b36;
 }
 
-img.gif{
+img.hp{
     position: absolute;    
-    right: 90vw;
-    top: 33vw;
+    right: 100vw;
+    top: 40vw;
     z-index: -1;
-    animation: slide 7s linear infinite;
+    animation: slide 8s linear infinite;
     width: 300px;
     height: auto;
 }
 
 @keyframes slide{
     0%{
-      transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
     }
     100%{
-      transform: translate3d(120vw, 0, 0);
+        transform: translate3d(140vw, -60vw, 0);
     }
 }
 
@@ -59,14 +59,20 @@ img.gif{
     text-align: center;
 }
 
+
 .list{
     font-size: 20px;
     list-style-position: inside;
-    height: 60px;
+    height: 10vw;
     overflow-y: scroll;
-    width: 500px;
+    width: 35vw;
     margin: 2vh 29vw;
     text-align: center;
+}
+
+.spell{
+    display: flex;
+    justify-content: space-between;
 }
 
 input{
@@ -83,3 +89,7 @@ input{
 *{
     cursor: url("Embossed.cur"), auto;	
 }
+
+.template {
+    display: none;
+  }
