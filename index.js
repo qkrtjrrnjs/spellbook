@@ -3,10 +3,16 @@ let manaBook = [];
 let counter = 0;
 
 const list = function(data, listName){
-    var node = document.createElement('li');            
+    var node = document.createElement('li');   
+    var btnNode = document.createElement('button');         
     var textnode = document.createTextNode(data);       
-    node.appendChild(textnode);                             
-    document.getElementById(listName).appendChild(node); 
+    var delTextNode = document.createTextNode('delete');
+    node.appendChild(textnode);                     
+    btnNode.appendChild(delTextNode);     
+    btnNode.onclick = function(){
+        this.parentNode.parentNode.removeChild(this.parentNode);
+    }
+    document.getElementById(listName).appendChild(node).appendChild(btnNode);
     node.style.color = '#363636';
 }
 
