@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
 </head>
-<body>
+<body onload="hide()">
     <div id="spellBookDiv">
-        <h1>[SPELLBOOK]</h1>
+        <h1 onclick="makeVisible()">[SPELLBOOK]</h1>
     </div>
 
     <h1 id="spellHeading" class="heading">[SPELL]</h1>
@@ -21,7 +21,7 @@
     <form id="formID">
         spell: <input type="text" name="spellData" id= "u" placeholder="spell" autofocus/>
         mana: <input type="number" name="manaData" id="p" placeholder="mana needed"/>
-        <input type="submit" id="submitButton" value="ADD"/>
+        <input type="submit" id="submitButton" value=""/>
     </form>
 
     <img class="gif" src="./harryPotter.gif">

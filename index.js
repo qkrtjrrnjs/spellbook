@@ -15,8 +15,8 @@ const form = document.getElementById('formID');
 form.onsubmit = function(event){
     event.preventDefault();   
     //const f = event.target; 
-    const spellValue = form.spellData.value;
-    const manaValue = form.manaData.value;
+    const spellValue = form.spellData.value.trim();
+    const manaValue = form.manaData.value.trim();
     
     if(spellValue === '' && manaValue === ''){
         alert("ENTER SPELL AND MANA");
@@ -34,10 +34,10 @@ form.onsubmit = function(event){
         const exists = false;
         for(let i = 0; i < spellBook.length; i++){
             if(spellBook[i] === spellValue){
+                form.spellData.focus();        
                 alert("SPELL ALREADY EXISTS IN THE SPELLBOOK!");
                 form.reset();   
                 exists = true;     
-                form.spellData.focus();        
             }
         }
         if(!exists){
@@ -45,13 +45,20 @@ form.onsubmit = function(event){
             list(manaValue, 'manaList');
 
             spellBook[counter] = spellValue;
-            manaBook[counter] = manaValue;
-            counter++;
+            manaBook[counter++] = manaValue;
             spellBook.sort();
             form.reset();
             form.spellData.focus();
         }
     }
+}
+
+function makeVisible(){
+    document.querySelector('.gif').style.visibility='visible';
+}
+
+function hide(){
+    document.querySelector('.gif').style.visibility='hidden';
 }
 
 
