@@ -87,7 +87,7 @@ input[type=submit]{
 input{
     flex: 4 1 0;
     height: auto;
-    font-size: 20px;
+    font-size: 1rem;
     text-align: center;
     font-family: 'Francois One', sans-serif;
     width: 20%;
