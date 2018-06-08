@@ -47,7 +47,7 @@ img.hp{
     
 }
 
-#submitButton{
+input[type=submit]{
     width: 1.8vw;
     height: 1.8vw;
     border-radius: 2vw;
@@ -61,12 +61,12 @@ img.hp{
 
 
 .list{
-    font-size: 20px;
+    font-size: 30px;
     list-style-position: inside;
-    height: 10vw;
+    height: 13vw;
     overflow-y: scroll;
-    width: 35vw;
-    margin: 2vh 29vw;
+    width: 40vw;
+    margin: 2vh 27vw;
     text-align: center;
 }
 
@@ -75,12 +75,28 @@ img.hp{
     justify-content: space-between;
 }
 
+.spell .name{
+    width: 50%;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    padding-left: 0.1em;
+    white-space: nowrap;
+    text-align: left;
+}
+
 input{
     font-size: 20px;
     text-align: center;
     font-family: 'Francois One', sans-serif;
+    width: 13vw;
+    height: 1.5vw;
+    border-color: #b3d7df;
 }
 
+button.delete{
+    background: none;
+    border-color: #b3d7df;
+}
 #formID{
     text-align: center;
     cursor: url("Embossed.cur"), auto;	

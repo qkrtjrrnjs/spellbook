@@ -15,9 +15,9 @@ class App{
         el.classList.add(name)
         el.setAttribute('title', value)
         return el
-      }
+    }
     
-      renderItem(spell) {
+    renderItem(spell) {
         const item = this.template.cloneNode(true)
         item.classList.remove('template')
     
@@ -43,9 +43,9 @@ class App{
     
     
         return item
-      }
+    }
     
-      removeSpell(spell, ev) {
+    removeSpell(spell, ev) {
         // Remove from the DOM
         const button = ev.target
         const item = button.closest('.spell')
@@ -54,7 +54,7 @@ class App{
         // Remove from the array
         const i = this.spellBook.indexOf(spell)
         this.spellBook.splice(i, 1)
-      }
+    }
 
 
 //input "submit" type click handling

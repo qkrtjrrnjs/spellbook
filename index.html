@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Spellbook</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
 </head>
 <body onload="hide()">
@@ -17,14 +18,16 @@
         <li class="spell template">
             <span class="name"></span>
             <span class="manaNeeded"></span>
-            <button class="delete"></button>
+            <button class="delete">
+                <i class="fas fa-trash"></i>
+            </button>
         </li>
     </ol><br><br>    
         
     <form id="formID">
         spell: <input type="text" name="spellData" id= "u" placeholder="spell" autofocus/>
-        mana: <input type="number" name="manaData" id="p" placeholder="mana needed"/>
-        <input type="submit" id="submitButton" value=""/>
+        mana: <input type="number" name="manaData" id="p" placeholder="mana needed" min="1" max="9999"/>
+        <input type="submit" value=""/>
     </form>
 
     <img class="hp" src="./harryPotter.gif">
