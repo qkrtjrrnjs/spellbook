@@ -65,7 +65,7 @@ class App{
 
         const spell = {
             name: form.spellData.value.trim(),
-            manaNeeded: form.manaData.value.trim(),
+            manaNeeded: form.manaData.value.trim() + ' MP',
         }  
     
         if(spell.name === '' && spell.manaNeeded === ''){
