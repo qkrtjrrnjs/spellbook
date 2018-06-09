@@ -53,29 +53,38 @@ input[type=submit]{
     border-radius: 2vw;
 }
 
-.list{
-    font-size: 30px;
-    list-style-position: inside;
-    height: 13vw;
-    overflow-y: scroll;
-    width: 40vw;
-    margin: 2vh 27vw;
-    text-align: center;
-}
 
 .spell{
     display: flex;
     justify-content: space-between;
+    width: 80%;
 }
 
-.spell .name{
+.name{
     width: 50%;
     overflow-x: hidden;
     text-overflow: ellipsis;
     padding-left: 0.1em;
-    white-space: nowrap;
     text-align: left;
 }
+
+.manaNeeded{
+    width: 80%;
+}
+
+main{
+    font-size: 30px;
+    list-style-position: inside;
+    height: 19vw;
+    overflow-y: scroll;
+    width: 70vw;
+    text-align: center;
+    box-sizing: border-box;
+    background-size: cover;
+    margin-left: 19vw;
+    padding: 1.5rem 4rem;
+}
+
 
 input{
     flex: 4 1 0;
@@ -89,8 +98,17 @@ input{
 
 button.delete{
     background: none;
+    color: #ec6249;
     border-color: #b3d7df;
 }
+
+button.fav{
+    background: none;
+    color: #eec239;
+    border-color: #b3d7df;
+}
+
+
 #formID{
     text-align: center;
     cursor: url("Embossed.cur"), auto;	

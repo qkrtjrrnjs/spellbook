@@ -13,19 +13,25 @@
         <h1 onclick="makeVisible()">SPELLBOOK</h1>
     </div>
 
-    <ol id="spellList" class="list">
-        <li class="spell template">
-            <span class="name"></span>
-            <span class="manaNeeded"></span>
-            <button class="delete">
+    <main>
+            <ol id="spellList">    
+            </ol>  
+    </main>
+
+    <li class="spell template">
+        <span class="name"></span>
+        <span class="manaNeeded"></span>
+        <button class="delete">
                 <i class="fas fa-trash"></i>
-            </button>
-        </li>
-    </ol><br><br>    
+        </button>
+        <button class="fav">
+                <i class="far fa-star"></i>
+        </button>
+    </li>
         
     <form id="formID">
-        spell: <input type="text" name="spellData" id= "u" placeholder="spell" autofocus/>
-        mana: <input type="number" name="manaData" id="p" placeholder="mana needed" min="1" max="9999"/>
+        spell: <input type="text" name="spellData" id= "u" placeholder="SPELL" autofocus/>
+        mana: <input type="number" name="manaData" id="p" placeholder="MANA NEEDED" min="1" max="9999"/>
         <input type="submit" value=""/>
     </form>
 
