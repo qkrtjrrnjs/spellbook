@@ -47,6 +47,12 @@ class App{
             el.setAttribute('title', spell[property])
           }
         })
+
+        if (spell.favorite) {
+            const el = item.querySelector('#favorite');
+            el.classList.remove('far');
+            el.classList.add('fas');
+        }
     
         // delete button
         item
@@ -97,10 +103,21 @@ class App{
     }
 
     toggleFavorite(spell,ev) {
-        const button = ev.target;
-        button.classList.toggleClass('fas fa-star');
-        spell.favorite = true;
-      }
+        const button = ev.currentTarget;
+        const item = button.querySelector('#favorite');
+
+        if(spell.favorite){
+            item.classList.remove('fas');
+            item.classList.add('far');
+            spell.favorite = false;
+            this.save();
+        }else{
+            item.classList.remove('far');
+            item.classList.add('fas');
+            spell.favorite = true;
+            this.save();
+        }
+    }
     
     removeSpell(spell, ev) {
         // Remove from the DOM

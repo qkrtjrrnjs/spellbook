@@ -32,6 +32,7 @@ img.hp{
     font-size: 30px;
     text-shadow: 3px 3px 2px #ec6249;
     text-align: center;
+    opacity: 0.95;
 }
 
 #spellBookDiv:hover{
@@ -62,6 +63,7 @@ input[type=submit]:hover{
     display: flex;
     justify-content: space-between;
     width: 90%;
+    margin-left: 0.9vw;
 }
 
 .name{
@@ -73,7 +75,7 @@ input[type=submit]:hover{
 }
 
 .manaNeeded{
-    width: 40%;
+    width: 80%;
 }
 
 main{
@@ -88,12 +90,9 @@ main{
     margin-left: 24.5vw;
     padding: 1.5rem 4rem;
     border-radius: 3vw;
-}
-
-main:hover{
     background-color: #b3d7df;
+    opacity: 0.9;
 }
-
 
 input{
     flex: 4 1 0;
@@ -103,6 +102,7 @@ input{
     font-family: 'Francois One', sans-serif;
     width: 20%;
     border-color: #b3d7df;
+    opacity: 0.9;
 }
 
 button.delete{
@@ -119,6 +119,12 @@ button.delete:hover{
     background-color: cadetblue;
 }
 
+#trash{
+    width: 20px;
+    height: 20px;
+}
+
+
 button.fav{
     background: none;
     color: #eec239;
@@ -133,6 +139,11 @@ button.fav:hover{
     background-color: cadetblue;
 }
 
+#favorite{
+    width: 20px;
+    height: 20px;
+}
+
 button.edit{
     background: none;
     color: #000000;
@@ -145,6 +156,11 @@ button.edit:hover{
     background-color: cadetblue;
     border-color: cadetblue;
     background-color: cadetblue;
+}
+
+#pencil{
+    width: 20px;
+    height: 20px; 
 }
 
 #formID{
