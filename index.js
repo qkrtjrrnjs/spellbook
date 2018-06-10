@@ -146,8 +146,12 @@ class App{
 
 const app = new App();
 
-function makeVisible(){
-    document.querySelector('.hp').style.visibility='visible';
+function visibility(){
+    if(document.querySelector('.hp').style.visibility === 'visible'){
+        document.querySelector('.hp').style.visibility='hidden';
+    }else{
+        document.querySelector('.hp').style.visibility='visible';
+    }
 }
 
 function hide(){
