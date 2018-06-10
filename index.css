@@ -73,7 +73,7 @@ input[type=submit]:hover{
 }
 
 .manaNeeded{
-    width: 80%;
+    width: 40%;
 }
 
 main{
@@ -120,6 +120,15 @@ button.fav:hover{
     background-color: #90d0f0;
 }
 
+button.edit{
+    background: none;
+    color: #000000;
+    border-color: #b3d7df;
+}
+
+button.edit:hover{
+    background-color: #90d0f0;
+}
 
 #formID{
     text-align: center;

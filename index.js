@@ -1,4 +1,5 @@
-class App{
+
+class App{    
     constructor(){
         this.spellBook = [];
         this.template = document.querySelector('.spell.template');
@@ -62,8 +63,37 @@ class App{
           'click',
           this.toggleFavorite.bind(this, spell)
         )
+
+        //edit button
+        item
+        .querySelector('button.edit')
+        .addEventListener(
+          'click',
+          this.editItem.bind(this, spell)
+        )
     
         return item
+    }
+
+    editItem(spell, ev){
+        
+        const button = ev.target;
+        const inputText = document.getElementById('inputText');
+        const inputNumber = document.getElementById('inputNumber');
+        
+        inputText.value = spell.name;
+        inputNumber.value = spell.manaNeeded.match(/\d+/g);
+        
+        const item = button.closest('.spell');
+        item.parentNode.removeChild(item);
+    
+        // Remove from the array
+        const i = this.spellBook.indexOf(spell);
+        this.spellBook.splice(i, 1);
+        this.save();
+        document.getElementById('formID').spellData.focus();
+
+        //item.contentEditable = true;
     }
 
     toggleFavorite(spell,ev) {
@@ -140,7 +170,8 @@ class App{
           'spellBook',
           JSON.stringify(this.spellBook)
         )
-      }
+    }
+    
 
 }
 
