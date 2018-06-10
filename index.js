@@ -144,7 +144,7 @@ class App{
         }
         else if(spell.manaNeeded == ' MP'){
             alert("ENTER MANA");
-            form.spellData.focus();
+            form.manaData.focus();
         }
         else{
             let exists = false;

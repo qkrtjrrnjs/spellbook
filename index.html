@@ -13,6 +13,12 @@
         <h1 onclick="visibility()">SPELLBOOK</h1>
     </div>
 
+    <form id="formID">
+        spell: <input type="text" name="spellData" id= "inputText" placeholder="SPELL" autofocus/>
+        mana: <input type="number" name="manaData" id="inputNumber" placeholder="MANA NEEDED" min="1" max="9999"/>
+        <input type="submit" value=""/>
+    </form>
+
     <main>
             <ol id="spellList">    
             </ol>  
@@ -32,11 +38,7 @@
         </button>
     </li>
         
-    <form id="formID">
-        spell: <input type="text" name="spellData" id= "inputText" placeholder="SPELL" autofocus/>
-        mana: <input type="number" name="manaData" id="inputNumber" placeholder="MANA NEEDED" min="1" max="9999"/>
-        <input type="submit" value=""/>
-    </form>
+    
 
     <img class="hp" src="./harryPotter.gif">
 

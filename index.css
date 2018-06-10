@@ -61,11 +61,11 @@ input[type=submit]:hover{
 .spell{
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 90%;
 }
 
 .name{
-    width: 50%;
+    width: 90%;
     overflow-x: hidden;
     text-overflow: ellipsis;
     padding-left: 0.1em;
@@ -79,14 +79,19 @@ input[type=submit]:hover{
 main{
     font-size: 30px;
     list-style-position: inside;
-    height: 19vw;
+    height: 30vw;
     overflow-y: scroll;
-    width: 70vw;
+    width: 50vw;
     text-align: center;
     box-sizing: border-box;
     background-size: cover;
-    margin-left: 19vw;
+    margin-left: 24.5vw;
     padding: 1.5rem 4rem;
+    border-radius: 3vw;
+}
+
+main:hover{
+    background-color: #b3d7df;
 }
 
 
@@ -104,30 +109,42 @@ button.delete{
     background: none;
     color: #ec6249;
     border-color: #b3d7df;
+    background-color: none;
+    border-radius: 0.5vw;
 }
 
 button.delete:hover{
-    background-color: #90d0f0;
+    background-color: cadetblue;
+    border-color: cadetblue;
+    background-color: cadetblue;
 }
 
 button.fav{
     background: none;
     color: #eec239;
     border-color: #b3d7df;
+    background-color: none;
+    border-radius: 0.5vw;
 }
 
 button.fav:hover{
-    background-color: #90d0f0;
+    background-color: cadetblue;
+    border-color: cadetblue;
+    background-color: cadetblue;
 }
 
 button.edit{
     background: none;
     color: #000000;
     border-color: #b3d7df;
+    background-color: none;
+    border-radius: 0.5vw;
 }
 
 button.edit:hover{
-    background-color: #90d0f0;
+    background-color: cadetblue;
+    border-color: cadetblue;
+    background-color: cadetblue;
 }
 
 #formID{
