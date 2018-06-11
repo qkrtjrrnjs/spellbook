@@ -12,7 +12,7 @@ img.hp{
     right: 100vw;
     top: 40vw;
     z-index: -1;
-    animation: slide 8s linear infinite;
+    animation: slide 4s linear infinite;
     width: 300px;
     height: auto;
 }
@@ -45,12 +45,58 @@ img.hp{
                  4px 4px #ec6249, 
                  5px 5px #ec6249, 
                  6px 6px #ec6249;
-    
 }
 
+#a{
+    position: relative;
+    animation: moving 3s infinite;
+}
+#b{
+    position: relative;
+    animation: moving 3s infinite;
+}
+#c{
+    position: relative;
+    animation: moving 3s infinite;
+}
+#d{
+    position: relative;
+    animation: moving 3s infinite;
+}
+#e{
+    position: relative;
+    animation: moving 3s infinite;
+}
+#f{
+    position: relative;
+    animation: moving 3s infinite;
+}
+#g{
+    position: relative;
+    animation: moving 3s infinite;
+}
+#h{
+    position: relative;
+    animation: moving 3s infinite;
+}
+#i{
+    position: relative;
+    animation: moving 3s infinite;
+}
+    
+@keyframes moving {
+    0%, 100%{
+        bottom: 8px;
+    }
+    50%{
+        bottom: -8px;
+    }
+}
+
+
 input[type=submit]{
-    width: 1.8vw;
-    height: 1.8vw;
+    width: 20px;
+    height: 20px;
     border-radius: 2vw;
 }
 
@@ -103,6 +149,7 @@ input{
     width: 20%;
     border-color: #b3d7df;
     opacity: 0.9;
+    border-radius: 0.5vw;
 }
 
 button.delete{
@@ -110,7 +157,7 @@ button.delete{
     color: #ec6249;
     border-color: #b3d7df;
     background-color: none;
-    border-radius: 0.5vw;
+    border-radius: 0.4vw;
 }
 
 button.delete:hover{
